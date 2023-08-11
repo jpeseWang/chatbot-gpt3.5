@@ -10,17 +10,17 @@ import {
   TypingIndicator,
 } from "@chatscope/chat-ui-kit-react";
 
-const API_KEY = "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";
+const API_KEY = "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";
 const systemMessage = {
   role: "system",
   content:
-    "Explain things like you're a customer representative talking to help resolve their problems.",
+    "Explain things like you're a teacher that helps student to learn IELTS.",
 };
 
 function App() {
   const [messages, setMessages] = useState([
     {
-      message: "こにちわ | Hello, I'm Leif! What can I help you?:>",
+      message: "こにちわ! What can I help you?:>",
       sentTime: "just now",
       sender: "ChatGPT",
     },
@@ -97,14 +97,14 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ position: "relative", height: "1000px", width: "800px" }}>
+      <div style={{ position: "relative", height: "800px", width: "700px" }}>
         <MainContainer>
           <ChatContainer>
             <MessageList
               scrollBehavior="smooth"
               typingIndicator={
                 isTyping ? (
-                  <TypingIndicator content="Handsome Leif is typing" />
+                  <TypingIndicator content="Teacher is typing" />
                 ) : null
               }
             >
